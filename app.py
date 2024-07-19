@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 # Set your Resend API key
 load_dotenv()
-resend.api_key =os.getenv('resend_api')
+resend.api_key =st.secrets["Resend_api"]
 
 def send_email(to_email, html_content):
     try:
